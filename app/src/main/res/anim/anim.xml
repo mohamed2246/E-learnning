@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator">
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:duration = "100"
+        />
+
+    <!-- startOffset تستخدم امتا الانيميشن هيشتغل بعد كام سنية من الرن  -->
+    <!-- duration التاثر هياخد وقت اد اي   -->
+    <!-- Interpolator <accelerateInterpolator> The rate of change starts out slowly, then accelerates.   -->
+    <!--  <alpha>  A fade-in or fade-out animation. -->
+    <!--android:fromAlpha Float. Starting opacity offset, where 0.0 is transparent and 1.0 is opaque.-->
+    <!--android:toAlpha Float. Ending opacity offset, where 0.0 is transparent and 1.0 is opaque.-->
+    <!--<translate>A vertical and/or horizontal motion. Supports the following attributes in any of the following three formats: values from -100 to 100 ending with "%", indicating a percentage relative to itself; values from -100 to 100 ending in "%p", indicating a percentage relative to its parent; a float value with no suffix, indicating an absolute value..-->
+    <!--android:fromXDelta Float or percentage. Starting X offset. Expressed either: in pixels relative to the normal position (such as "5"), in percentage relative to the element width (such as "5%"), or in percentage relative to the parent width (such as "5%p").-->
+    <!--android:toXDelta Float or percentage. Ending X offset. Expressed either: in pixels relative to the normal position (such as "5"), in percentage relative to the element width (such as "5%"), or in percentage relative to the parent width (such as "5%p").-->
+    <!-- android:fillAfter	When set to true, the animation transformation is applied after the animation is over.-->
+
+
+    <translate
+        android:startOffset = "2000"
+        android:fromYDelta="0%p"
+        android:toYDelta="-25%p"
+        android:duration = "1500"
+
+        />
+
+
+
+</set>
